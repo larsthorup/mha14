@@ -4,10 +4,14 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-jasmine');
     gruntConfig.jasmine = {
         src: [
-            'src/**/*.js'
+            'src/**/*.js',
+            '!src/lib/**/*.js'
         ],
         options: {
             specs: 'test/**/*.test.js',
+            vendor: [
+                'src/lib/**/*.js'
+            ],
             keepRunner: true
         }
     };

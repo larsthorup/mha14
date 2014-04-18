@@ -1,9 +1,10 @@
 <html>
 <head>
     <title>Weather</title>
+    <script src="lib/jquery-2.1.0.js"></script>
     <script src="weather.js"></script>
 </head>
-<body>
+<body onload="Weather.render($('body'), {text: 'sunny'})">
     <h1>Weather</h1>
 </body>
 </html>

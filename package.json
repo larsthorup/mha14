@@ -8,9 +8,10 @@
   "author": "lars thorup and rob myers",
   "devDependencies": {
     "grunt": "~0.4.4",
-    "grunt-contrib-jasmine": "~0.6.3"
+    "grunt-contrib-jasmine": "~0.6.3",
+    "grunt-template-jasmine-istanbul": "~0.3.0"
   },
   "scripts": {
-      "test": "grunt test"
+    "test": "grunt cover"
   }
 }

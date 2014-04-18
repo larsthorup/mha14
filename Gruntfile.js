@@ -10,7 +10,8 @@ module.exports = function (grunt) {
         options: {
             specs: 'test/**/*.test.js',
             vendor: [
-                'src/lib/**/*.js'
+                'src/lib/**/*.js',
+                'test/lib/**/*.js'
             ],
             keepRunner: true
         }
